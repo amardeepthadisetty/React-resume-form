@@ -31,7 +31,7 @@ class ProfilePage extends Component{
                 </Pdf>
                 <div className="container" ref={ref}>
 
-                    <h2>Resume</h2>
+                    <h2 className="resume-center">Resume</h2>
                     <div className="rowww" >
                         <div>
                             Name : {this.state.profile.name}
