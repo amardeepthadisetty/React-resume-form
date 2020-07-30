@@ -1,6 +1,8 @@
 import  React, { useState }from 'react';
+import { useHistory } from 'react-router-dom';
 
 const ProfileForm = () => {
+    const history = useHistory();
     const [profile, setProfile] = useState({
         name: '',
         email: '',
@@ -44,6 +46,7 @@ const ProfileForm = () => {
 
         console.log("profile si: ", profile);
         localStorage.setItem('profile', JSON.stringify(profile));
+        history.push( 'profile');
     }
     
 
